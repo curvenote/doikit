@@ -2,7 +2,7 @@
   "name": "doi-utils",
   "version": "2.0.3",
   "description": "Set of utility functions to help with handling DOI(Digital Object Identifier)",
-  "author": "Curvenote Inc. <support@curvenote.com>",
+  "author": "Rowan Cockett <rowan@continuous.foundation>",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/curvenote/doi-utils.git"
+    "url": "git+https://github.com/continuous-foundation/doi-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/curvenote/doi-utils/issues"
+    "url": "https://github.com/continuous-foundation/doi-utils/issues"
   },
-  "homepage": "https://github.com/curvenote/doi-utils",
+  "homepage": "https://github.com/continuous-foundation/doi-utils",
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
     "clean": "rm -rf dist",
