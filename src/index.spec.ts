@@ -25,6 +25,13 @@ describe('validate', () => {
     expect(doi.validate(valid)).toBe(true);
   });
 
+  // Not DOIs
+  test.each([
+    'https://www.technologyreview.com/2020/07/17/1005396/predictive-policing-algorithms-racist-dismantled-machine-learning-bias-criminal-justice/',
+  ])('Validate does not identify %p', (valid) => {
+    expect(doi.validate(valid)).toBe(false);
+  });
+
   test('weird links that have DOI.org in them still pass', () => {
     const doiPart = '10.1175/1520-0493(1972)100%3C0081%3AOTAOSH%3E2.3.CO%3B2';
     const url = `https://doi.org/${doiPart}`;
